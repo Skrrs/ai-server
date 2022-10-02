@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 
-from .endpoints import greeting
+from .endpoints import voice
 
 
 api_router = APIRouter()
 
-api_router.include_router(greeting.router, tags=["greeting"], prefix="/greeting")
+api_router.include_router(voice.router, tags=["voice"], prefix="/voice")
