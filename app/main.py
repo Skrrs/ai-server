@@ -1,5 +1,4 @@
 import logging
-
 import uvicorn
 
 from fastapi import FastAPI
@@ -14,7 +13,7 @@ logging.basicConfig(level=logging.INFO)
 def create_app():
 
     _app = FastAPI()
-    _app.include_router(api_router, prefix="/mask/ai")
+    _app.include_router(api_router, prefix="/api/ai")
     return _app
 
 
