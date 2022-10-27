@@ -4,7 +4,6 @@ import sys
 import json
 
 from fastapi import APIRouter, Response, UploadFile, Form, File
-from fastapi.responses import FileResponse
 
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 from model import whisper, conformer
