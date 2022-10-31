@@ -10,7 +10,9 @@ logging.basicConfig(level=logging.INFO)
 
 def create_app():
 
-    _app = FastAPI()
+    _app = FastAPI(title="Korean Speech Recognition API",
+                   description="Whisper and Conformer-CTC",
+                   version="1.0.0")
     _app.include_router(api_router, prefix="/api/ai")
     return _app
 
