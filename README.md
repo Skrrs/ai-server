@@ -12,7 +12,9 @@ Korean Speech Recognition API using Conformer-CTC and Whisper
 
 ## How to run
 To run this code, you need ffmpeg.exe and .nemo file.
+
 Those files are not in this repository due to the insufficient capacity.
+
 If you need those files, contact 9997ijh@gmail.com
 
 1. docker build -t {image_name} .
