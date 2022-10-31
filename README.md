@@ -1,6 +1,8 @@
 # ai-server
 AI server of MASK
 
+Korean Speech Recognition API using Conformer-CTC and Whisper
+
 
 ## How to install
 1. pip install virtualenv
@@ -15,6 +17,15 @@ If you need those files, contact 9997ijh@gmail.com
 
 1. docker build -t {image_name} .
 2. docker run -p {your host port}:5022 {image_name}
+
+- Swagger
+    ![img.png](resource/swagger.png)
+
+- Using Postman
+  - Conformer-CTC
+    ![img_4.png](resource/conformer-ctc.png)
+  - Whisper
+    ![img_2.png](resource/whisper.png)
 
 
 ## Reference
