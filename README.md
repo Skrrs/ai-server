@@ -36,7 +36,7 @@ If you need those files, contact 9997ijh@gmail.com
 - https://github.com/kkroening/ffmpeg-python
 - https://koreascience.kr/article/JAKO202128837810056.pdf
 
-If you want ipynb version of the model, visit these repository. 
+If you want ipynb version of the model, visit these repositories. 
 
 - [conformer-ctc](https://github.com/Skrrs/ml_conformer_ctc)
 - [whisper](https://github.com/Skrrs/ml_whisper)
