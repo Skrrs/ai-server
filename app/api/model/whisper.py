@@ -54,7 +54,7 @@ def load_audio(audio_file, sr: int = SAMPLE_RATE):
     return np.frombuffer(out, np.int16).flatten().astype(np.float32) / 32768.0
 
 
-def get_cer(reference, transcription, rm_punctuation = True) -> json:
+def get_cer(reference, transcription, rm_punctuation=True) -> json:
 
     # 문자 오류율(CER)은 자동 음성 인식 시스템의 성능에 대한 일반적인 메트릭입니다.
     # CER은 WER(단어 오류율)과 유사하지만 단어 대신 문자에 대해 작동합니다.

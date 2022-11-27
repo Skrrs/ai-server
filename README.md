@@ -3,12 +3,7 @@ AI server of MASK
 
 Korean Speech Recognition API using Conformer-CTC and Whisper
 
-
-## How to install
-1. pip install virtualenv
-2. virtualenv {venv_name}
-3. source {venv_name}/bin/activate
-4. pip install -r requirements.txt
+![architecture.png](resource/architecture.png)
 
 ## How to run
 To run this code, you need ffmpeg.exe and .nemo file.
@@ -16,18 +11,21 @@ To run this code, you need ffmpeg.exe and .nemo file.
 Those files are not in this repository due to the insufficient capacity.
 
 If you need those files, contact 9997ijh@gmail.com
+```sh
+# Build Image
+docker build -t {tag-name} .
+# Run container
+docker run -p {your host port}:5022 --name {container-name} {tag-name}
+```
 
-1. docker build -t {image_name} .
-2. docker run -p {your host port}:5022 {image_name}
-
-- Swagger
-    ![img.png](resource/swagger.png)
+- Using Swagger
+    ![swagger.png](resource/swagger.png)
 
 - Using Postman
   - Conformer-CTC
-    ![img_4.png](resource/conformer-ctc.png)
+    ![conformer.png](resource/conformer-ctc.png)
   - Whisper
-    ![img_2.png](resource/whisper.png)
+    ![whisper.png](resource/whisper.png)
 
 
 ## Reference
