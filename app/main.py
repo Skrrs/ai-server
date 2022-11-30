@@ -1,6 +1,7 @@
 import logging
 
 from fastapi import FastAPI
+from starlette.middleware.cors import CORSMiddleware
 
 from app.api.api import api_router
 
@@ -17,4 +18,16 @@ def create_app():
     return _app
 
 
+origins = [
+    "http://18.178.180.144",
+]
+
 app = create_app()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
